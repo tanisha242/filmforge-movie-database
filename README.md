@@ -49,16 +49,5 @@ FilmForge is a dynamic, database-driven web platform for movie lovers to explore
 3. Start Apache and MySQL in XAMPP control panel
 4. Import the `filmforge.sql` file into phpMyAdmin
 5. Navigate to `http://localhost/filmforge` in your browser
-
----
-
-##  Future Enhancements
-
--  Dark mode & better responsive UI
--  Analytics for personalized recommendations
--  Movie APIs for auto-fetching content
--  AI-powered recommendation engine
--  Mobile-first design
--  Social media login and sharing
-
+The current database schema is partial. Additional .sql files (reviews, watchlists, and favorites) will be added soon.
 ---
