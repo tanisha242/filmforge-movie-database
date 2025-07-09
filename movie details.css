@@ -1,0 +1,210 @@
+/* General Styles */
+body 
+{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background-color: #000; 
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh; 
+}
+
+body::before 
+{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); 
+    backdrop-filter: blur(10px); 
+    z-index: -1;
+}
+
+
+/* Navbar */
+nav 
+{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul 
+{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li 
+{
+    margin: 0 15px;
+}
+
+nav ul li a 
+{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover 
+{
+    color: #f39c12;
+}
+
+.container 
+{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 80px;
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+}
+
+.movie-image img 
+{
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.movie-description 
+{
+    flex: 1;
+    max-width: 600px;
+}
+
+.movie-description h1 
+{
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.movie-description p 
+{
+    font-size: 1rem;
+    margin: 10px 0;
+    color: #ddd;
+}
+
+.movie-description a 
+{
+    color: #f39c12;
+    text-decoration: none;
+}
+
+.review-form 
+{
+    flex-basis: 300px;
+    max-width: 300px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.review-form h3 
+{
+    color: #fff;
+}
+
+.star-rating 
+{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.star 
+{
+    color: #f39c12;
+}
+
+.star.filled 
+{
+    color: #e67e22;
+}
+
+.reviews 
+{
+    margin-top: 50px;
+    width: 100%;
+}
+
+.review 
+{
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.review p 
+{
+    margin: 5px 0;
+    color: #ddd;
+}
+
+.review strong 
+{
+    font-size: 1.1rem;
+}
+
+/* Styling for the Review Form Textbox */
+.review-form textarea 
+{
+    width: 100%; 
+    height: 100px; 
+    resize: none; 
+    border-radius: 5px; 
+    border: 1px solid #ccc; 
+    padding: 10px; 
+    font-size: 1rem; 
+    background-color: #222; 
+    color: #fff; 
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+.movie-detail-page 
+{
+    background-position: center;
+    background-size: cover;
+      color: #fff;
+    height: 100vh; 
+     background-image: url('default-images/background image.jpg');
+}
+
+
+.movie-detail-page::before 
+{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); 
+    backdrop-filter: blur(10px);
+    z-index: -1;
+}
+
+
+
+
